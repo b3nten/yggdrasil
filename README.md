@@ -25,7 +25,7 @@ To access a word in Yggdrasil, simply use the following syntax:
 
 `yggdrasil.w.o.r.d // enum word`
 
-For example, to access the word "useless", you would do:
+For example, to access the word "unsafe", you would do:
 
 `const stringsAre = yggdrasil.u.n.s.a.f.e // stringsAre === "unsafe"`
 
