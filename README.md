@@ -5,7 +5,7 @@ Welcome to Yggdrasil, the ultimate solution for making the English language Type
 
 Traditionally, strings would be used to define words. This has the downside of being completly unsafe at a fundemental level. Notice how I just mis-spelled "fundamental"? That's because markdown files are not type-safe. Billions of dollars are lost each year due to the unsoundness of using un-typed strings to define words.
 
-With Yggdrasil, you get full type-safety for all ~37,000 words in the english language.
+With Yggdrasil, you get full type-safety for all ~37,000 words in the english language. Stop writing strings, and inherit your text from the Norse World Tree.
 
 # Getting Started
 
