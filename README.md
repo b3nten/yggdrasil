@@ -7,6 +7,14 @@ Traditionally, string literals are used to define words. This has the downside o
 
 With Yggdrasil, you get full type-safety for all ~37,000 words in the english language. Stop writing strings, and inherit your words from the Norse World Tree.
 
+# API
+
+There is a JSON API you can use to convert words and sentences into Yggdrasil code.
+
+GET: `https://yggdrasil.deno.dev/?input=hello`
+
+POST: req.body: {input: string} => res.body: {output: string}
+
 # Getting Started
 
 To get started with Yggdrasil, install the library via npm:
