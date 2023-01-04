@@ -13,7 +13,7 @@ There is a JSON API you can use to convert words and sentences into Yggdrasil co
 
 GET: `https://yggdrasil.deno.dev/?input=hello`
 
-POST: req.body: {input: string} => res.body: {output: string}
+POST: `req.body: {input: string} => res.body: {output: string}`
 
 # Getting Started
 
