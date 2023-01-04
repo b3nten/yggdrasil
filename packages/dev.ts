@@ -7,11 +7,11 @@ const words = res.split('\n').map((word) => word.replace(/[^a-z]/g, '')).filter(
 const branches = {}
 for(const word of words) {
     const path = word.split('').join('.')
-    _set(branches, path, 'trunk.' + word)
+    _set(branches, path, 't.' + word)
 }
-Deno.writeTextFileSync("branches.ts", `import { trunk } from ".trunk";
-export const branches = ${JSON.stringify(branches, null, 4).replaceAll('"', '')}`)
+Deno.writeTextFileSync("yggdrasil.ts", `import { trunk as t } from "./trunk";
+export const branches = ${JSON.stringify(branches).replaceAll('"', '')};
+`)
 
-Deno.writeTextFileSync("trunk.ts", `export enum trunk {
-    ${words.map((word) => word + ' = "' + word + '"').join(',\n    ')}
-}`)
+Deno.writeTextFileSync("trunk.ts", `export enum trunk {${words.map((word) => word + '="' + word + '"').join(',')}}
+`)
